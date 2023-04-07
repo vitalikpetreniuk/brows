@@ -627,7 +627,7 @@ input:-webkit-autofill {
 /* BREADCRUMBS */
 .breadcrumbs{
   margin: 0 auto;
-  padding: 13px 15px;
+  padding: 21px 15px;
   list-style: none;
   max-width: 1290px;
   font: 500 13px/16px VisbyCF;
@@ -647,7 +647,7 @@ input:-webkit-autofill {
   right: -15px;
   width: 5px;
   height: 9px;
-  background: url(../img/arrow-right-white.svg) no-repeat 50% 50%;
+  background: url(../img/arrow-right-gray.svg) no-repeat 50% 50%;
 }
 .breadcrumbs li:last-child:before{
   display: none;
@@ -684,11 +684,15 @@ section{
 .index-page .promo-section .text p{
   margin: 0 0 40px;
 }
+.course-page .promo-section .wrap-img{
+  height: 550px;
+}
 .course-page .promo-section .text{
   max-width: 100%;
   left: 0;
   transform: translate(0,-50%);
   text-align: left;
+  padding: 0 125px;
 }
 .promo-section h1{
   font: normal 80px/80px RichardKailay;
@@ -731,14 +735,6 @@ section{
 .promo-section .text p{
   margin: 0 0 40px;
 }
-strong.title{
-  display: block;
-  font: normal 123px/112px RichardKailay;
-  font-style: italic;
-  letter-spacing: 0.01em;
-  text-transform: none;
-  margin: 0 0 15px;
-}
 .promo-section .text .btn{
   background: #fff;
   color: #000 !important;
@@ -746,6 +742,108 @@ strong.title{
 .promo-section .text .btn:hover{
   background: #B69B94;
   color: #fff !important;
+}
+.course-page .promo-section{
+  margin-top: 186px;
+}
+.course-page .promo-section .top-text{
+  top: -152px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+.course-page .promo-section .top-text .btn{
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  padding: 7px 16px;
+  background: none;
+  border: 1px solid #635F51;
+  color: #635F51 !important;
+}
+.course-page .promo-section .top-text .btn:hover{
+  background: #B69B94;
+  border-color: #B69B94;
+  color: #fff !important;
+}
+.course-page .promo-section h1{
+  font: 700 56px/54px Classico;
+  letter-spacing: 0.06em;
+  margin: 37px auto 43px;
+}
+.icon-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.icon-list li{
+  display: flex;
+  align-items: center;
+  margin: 0 30px 10px;
+}
+.icon-list .icon{
+  margin-right: 12px;
+}
+.icon-list .icon-list-text{
+  font: 600 15px/18px VisbyCF;
+}
+.white-box{
+  width: 281px;
+  min-height: 285px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 10px rgba(182, 155, 148, 0.3);
+  border-radius: 30px;
+  padding: 27px 20px;
+  font: 500 13px/16px VisbyCF;
+  color: #000;
+  border: 3px solid #9a807a;
+  text-align: center;
+}
+.white-box .title{
+  font: 700 20px/28px VisbyCF;
+  letter-spacing: -0.02em;
+  margin: 30px 0;
+}
+.white-box .icon-list{
+  color: #B69B94;
+}
+.white-box .icon-list li:only-child{
+  margin: 0;
+  justify-content: center;
+}
+.white-box a{
+  text-decoration: none;
+  color: #B69B94;
+}
+.white-box a:hover{
+  color: #96460A;
+}
+.promo-section .white-box p,
+.white-box p{
+  margin: 0;
+}
+.promo-section .white-box .btn{
+  width: 100%;
+  max-width: 206px;
+  background: #B69B94;
+  color: #fff !important;
+  margin: 0 0 20px;
+}
+.promo-section .white-box .btn:hover{
+  background: #E6D7CE;
+  color: #000 !important;
+}
+strong.title{
+  display: block;
+  font: normal 123px/112px RichardKailay;
+  font-style: italic;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  margin: 0 0 15px;
 }
 .slider{
   list-style: none;
@@ -2030,20 +2128,222 @@ strong.title{
   font-size: 30px;
 }
 .short-content-section{
-  padding: 80px 0;
+  padding: 100px 0 51px;
 }
 .short-content-section .news-section{
-  max-width: 770px;
-  margin: 0 0 0 auto;
+  max-width: 768px;
+  margin: 0 110px 0 auto;
+}
+.news-block{
+  line-height: 25px;
+  margin: 0 0 50px;
+}
+.news-block .top-title{
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #A2A2A2;
+  margin: 0 0 18px;
+}
+.news-block h2{
+  letter-spacing: 0.057em;
+  max-width: 680px;
+  margin: 0 0 23px;
 }
 .rating-list-block{
-
+  margin: 59px 0;
+}
+.rating-list-block h2{
+  margin: 0 0 21px;
 }
 .rating-list{
   padding: 0;
-  margin: 0;
+  margin: 0 0 20px;
   list-style: none;
 }
+.rating-list li{
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 21px 0 21px 37px;
+  position: relative;
+}
+.rating-list li:last-child{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.rating-list .icon-star{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.rating-list p{
+  margin: 0;
+}
+.news-block b{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  margin-right: 6px;
+}
+.news-block .image{
+  min-height: 324px;
+  margin: 0 0 60px;
+}
+.news-block .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.news-block .author-block{
+  margin: -10px 0 60px;
+}
+.news-block .author-block .image{
+  margin: 0;
+}
+.news-block .author-block .h2{
+  font: 700 24px/28px VisbyCF;
+  margin: 0 0 11px;
+  letter-spacing: -0.02em;
+}
+.news-block .author-block .text{
+  font: normal 20px/25px VisbyCF;
+  letter-spacing: -0.005em;
+  margin: 29px 0 0 50px;
+}
+.news-block p + .boxes-list{
+  margin-top: -11px;
+}
+.boxes-list,
+.comments-list{
+  padding: 0;
+  margin: 0 0 10px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.boxes-list{
+  margin: 0 -17px;
+  justify-content: flex-start;
+}
+.boxes-list > li{
+  width: 29%;
+  min-height: 277px;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  padding: 19px;
+  margin: 0 17px 20px;
+}
+.boxes-list .icon{
+  margin: 0 0 20px;
+}
+.boxes-list .icon img{
+  max-height: 50px;
+}
+.boxes-list .title{
+  font: 700 18px/18px VisbyCF;
+  letter-spacing: 0;
+  margin: 0 0 20px;
+}
+.comments-list{
+  line-height: 22px;
+  margin-bottom: -31px;
+}
+.comments-list li{
+  width: 47.5%;
+  margin: 0 0 30px;
+}
+.comments-list p{
+  margin: 0 0 10px;
+}
+.comments-list .photo-author{
+  margin: 0 0 20px;
+}
+.comments-list .photo-author .author-text .name{
+  line-height: 20px;
+}
+.check-list{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  color: #535353;
+}
+.check-list li{
+  padding: 0 0 0 28px;
+  margin: 0 0 12px;
+  position: relative;
+}
+.check-list li:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: url(../img/icon-check.svg) no-repeat;
+  background-size: 100%;
+  width: 17px;
+  height: 17px;
+  transform: translateY(-50%);
+}
+.check-list li:last-child{
+  margin: 0;
+}
+.boxes-list-price{
+  font: normal 12px/16px VisbyCF;
+  margin: 0 -15px;
+}
+.boxes-list-price > li{
+  padding-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.boxes-list-price .first-box .top-title{
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: line-through;
+}
+.boxes-list-price .top-title{
+  font: 700 12px/14px VisbyCF;
+  letter-spacing: 0.09em;
+  margin: 0 0 10px;
+}
+.boxes-list-price .first-box .title{
+  margin: 0 0 10px;
+}
+.boxes-list-price .title{
+  font: 800 24px/29px VisbyCF;
+  letter-spacing: -0.02em;
+  margin: 0 0 15px;
+}
+.boxes-list-price p{
+  margin: 0 0 15px;
+}
+.boxes-list-price .btn{
+  width: 100%;
+  max-width: 193px;
+  margin: 13px 0 0;
+}
+.gray-box{
+  background: #C9C6BC;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 40px 0;
+}
+.gray-box .title{
+  font: 700 24px/29px VisbyCF;
+  letter-spacing: -0.01em;
+  margin: 0 0 20px;
+}
+.gray-box p{
+  margin: 0 0 20px;
+}
+.gray-box .btn{
+  background: #000;
+  color: #fff;
+  min-width: 193px;
+}
+.gray-box .btn:hover{
+  background: #fff;
+}
+
+
 
 
 
@@ -3139,6 +3439,24 @@ strong.title{
     font-size: 46px;
     line-height: 48px;
   }
+  .course-page .promo-section h1{
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .course-page .promo-section .text{
+    padding: 0 15px;
+  }
+  .short-content-section .news-section{
+    margin: 0 auto;
+  }
+  .boxes-list{
+    margin: 0 -15px;
+  }
+  .boxes-list > li{
+    width: 29.4%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
 
 
 
@@ -3279,6 +3597,13 @@ strong.title{
   h1, .h2{
     font-size: 40px;
     line-height: 38px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 23px;
+  }
+  .mobile{
+    display: block;
   }
   .promo-section .text{
     max-width: 330px;
@@ -3803,7 +4128,8 @@ strong.title{
   .breadcrumbs{
     display: none;
   }
-  .promo-section .wrap-img {
+  .promo-section .wrap-img,
+  .course-page .promo-section .wrap-img {
     height: 447px;
   }
   .photo-gallery-list li{
@@ -3873,6 +4199,163 @@ strong.title{
   .contacts-section{
     padding: 78px 0 84px;
   }
+  .promo-section .white-box{
+    display: none;
+  }
+  .course-page .promo-section h1 {
+    font-size: 40px;
+    line-height: 38px;
+    max-width: 345px;
+  }
+  .short-content-section{
+    padding: 50px 0 0;
+  }
+  .icon-list{
+    margin: 0 -30px;
+  }
+  .icon-list li{
+    margin: 0 30px;
+  }
+  .news-block .image{
+    min-height: 0;
+  }
+  .course-page .promo-section {
+    margin-top: 213px;
+    margin-bottom: 93px;
+  }
+  .course-page .promo-section .top-text{
+    top: -173px;
+  }
+  .course-page .promo-section .top-text .btn{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .course-page .promo-section h1{
+    margin: 18px auto 22px;
+  }
+  .course-page .promo-section .text{
+    top: auto;
+    bottom: -74px;
+    margin: 0;
+    transform: translate(0);
+  }
+  .course-page .promo-section .text .btn{
+    max-width: 343px;
+    margin: 0 auto;
+    background: #B69B94;
+    color: #fff !important;
+  }
+  .course-page .promo-section .text .btn:hover{
+    background: #E6D7CE;
+    color: #000 !important;
+  }
+  .news-block .top-title{
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.07em;
+  }
+  .news-block{
+    line-height: 22px;
+  }
+  .rating-list{
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0 -15px 20px;
+  }
+  .rating-list li{
+    padding: 21px 15px;
+  }
+  .rating-list b{
+    display: block;
+    margin: 0 0 11px 38px;
+  }
+  .rating-list .icon-star{
+    top: 20px;
+    left: 18px;
+    transform: translateY(0);
+  }
+  .news-block .author-block{
+    margin-bottom: -10px;
+  }
+  .news-block .author-block .text{
+    width: 100%;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 9px 0 0;
+    text-align: left;
+  }
+  .news-block .author-block .text p{
+    max-width: 100%;
+    margin: 0 0 19px;
+  }
+  .news-block .author-block .h2{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+  }
+  .boxes-list{
+    margin: 0 0 58px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .boxes-list > li{
+    width: 100%;
+    margin: 0 0 35px;
+    min-height: 199px;
+  }
+  .boxes-list > li:last-child{
+    margin: 0;
+  }
+  .boxes-list p{
+    margin: 0;
+  }
+  .comments-list{
+    font-size: 18px;
+    margin-top: -7px;
+  }
+  .comments-list li{
+    width: 100%;
+    margin: 0 0 24px;
+  }
+  .comments-list li:last-child{
+    margin-bottom: 30px;
+  }
+  .comments-list .photo-author {
+    margin: 0 0 25px;
+    flex-wrap: nowrap;
+  }
+  .comments-list .photo-author img{
+    margin-right: 10px;
+  }
+  .boxes-list-price{
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .boxes-list-price > li{
+    padding: 19px 28px;
+  }
+  .boxes-list-price p {
+    margin: 0 0 15px;
+  }
+  .check-list{
+    font-size: 12px;
+  }
+  .boxes-list-price .btn{
+    display: block;
+    max-width: 303px;
+    margin: 0 auto;
+  }
+  .gray-box{
+    line-height: 25px;
+    margin-bottom: 100px;
+  }
+  .gray-box .btn{
+    display: block;
+    width: 100%;
+    max-width: 303px;
+    margin: 0 auto;
+  }
+
 
 
 
@@ -4153,5 +4636,14 @@ strong.title{
   }
   .map{
     height: 224px;
+  }
+  .course-page .promo-section .wrap-img {
+    height: 241px;
+  }
+  .news-block .image {
+    height: 210px;
+  }
+  .no-mobile{
+    display: none;
   }
 }
