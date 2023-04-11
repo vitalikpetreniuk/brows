@@ -88,8 +88,19 @@ function initGallerySlider() {
     .slick({
       infinite: false,
       arrows: true,
+      // centerMode: true,
+      variableWidth: true,
       slidesToShow: 3,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 }
 function initSlickSlider2() {
