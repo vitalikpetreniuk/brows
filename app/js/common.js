@@ -87,17 +87,16 @@ function initGallerySlider() {
     })
     .slick({
       infinite: false,
+      speed: 300,
       arrows: true,
-      // centerMode: true,
       variableWidth: true,
-      slidesToShow: 3,
+      slidesToShow: 1,
       slidesToScroll: 1,
       responsive: [
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
+            centerMode: true
           }
         }
       ]
@@ -164,7 +163,9 @@ function initSlickSlider5() {
       {
         breakpoint: 768,
         settings: {
-          arrows: true
+          arrows: true,
+          centerMode: true,
+          variableWidth: true
         }
       }
     ]
