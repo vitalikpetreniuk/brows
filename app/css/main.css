@@ -1229,7 +1229,7 @@ margin: 99px 0 0;
 }
 .navigation-page.sticky{
   position: fixed;
-  top: 102px;
+  top: 103px;
   width: 100%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
   margin: 0;
@@ -1237,13 +1237,13 @@ margin: 99px 0 0;
 }
 .navigation-page{
   position: absolute;
-  top: 102px;
+  top: 103px;
   left: 0;
   width: 100%;
   background: #fff;
   border-top: 1px solid #D9D9D9;
   height: 83px;
-  z-index: 20;
+  z-index: 19;
 }
 .navigation-menu{
   list-style: none;
